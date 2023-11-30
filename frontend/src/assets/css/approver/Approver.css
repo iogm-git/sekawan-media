@@ -1,0 +1,114 @@
+.approver__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: var(--m);
+    font-size: var(--s);
+    flex-wrap: wrap;
+    margin-top: var(--m);
+}
+
+.approver__card {
+    box-shadow: var(--shadow);
+    border-radius: calc(var(--xxs)/ 2);
+    padding: calc(var(--xxs) / 2);
+    box-sizing: border-box;
+    display: grid;
+    gap: calc(var(--xxs)/ 2);
+}
+
+.approver__card-id,
+.approver__card-box,
+.approver__info,
+.approver__card-buttons,
+.approver__card-div {
+    border-radius: 3px;
+    border: var(--border);
+    padding: 4px 7px;
+    width: max-content;
+    box-sizing: border-box;
+}
+
+.approver__card-box {
+    border-color: var(--text-color);
+    display: grid;
+    gap: 4px;
+}
+
+.approver__card-div {
+    width: 100%;
+}
+
+.approver__card-id {
+    justify-self: end;
+}
+
+.approver__card-part {
+    text-decoration: underline;
+    text-align: center;
+}
+
+.approver__card-pack {
+    display: grid;
+    gap: 3px;
+    grid-template-columns: repeat(2, max-content);
+    font-size: var(--xs);
+}
+
+.approver__card-info {
+    display: grid;
+    place-items: center;
+    gap: 4px;
+}
+
+.approver__info {
+    width: 100%;
+}
+
+.approver__info .approver__info-key {
+    font-size: var(--xxs);
+    opacity: .8;
+    text-align: right;
+}
+
+.approver__info-value {
+    font-size: var(--xs);
+}
+
+.approver__card-buttons {
+    width: 100%;
+}
+
+.approver__card-btn-pack {
+    display: flex;
+    justify-content: space-around;
+    gap: var(--m);
+    margin-top: 4px;
+}
+
+.approver__card-btn {
+    border-radius: 200px;
+    padding: 4px 8px;
+    font-size: bold;
+    border: 1px solid;
+}
+
+.approver__card-btn:nth-of-type(1) {
+    border-color: var(--green-color);
+    color: var(--green-color);
+}
+
+.approver__card-btn:nth-of-type(1).active {
+    background-color: var(--green-color);
+    color: var(--container-color);
+}
+
+.approver__card-btn:nth-of-type(2) {
+    border-color: var(--red-color);
+    color: var(--red-color);
+}
+
+.approver__card-btn:nth-of-type(2).active {
+    background-color: var(--red-color);
+    color: var(--container-color);
+}

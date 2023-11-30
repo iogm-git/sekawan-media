@@ -1,0 +1,8 @@
+.main__login {
+    min-height: 90vh;
+    align-items: center;
+}
+
+.section__login {
+    width: max-content;
+}

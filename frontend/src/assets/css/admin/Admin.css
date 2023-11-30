@@ -1,0 +1,94 @@
+.admin__data {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    grid-template-areas: 'barchart barchart' 'piechart table';
+    gap: var(--x);
+}
+
+.admin__data .content-wrapper:nth-of-type(1) {
+    grid-area: barchart;
+}
+
+.admin__data .content-wrapper:nth-of-type(2) {
+    grid-area: piechart;
+
+}
+
+.admin__data .content-wrapper:nth-of-type(3) {
+    grid-area: table;
+
+}
+
+.admin__chart-title {
+    font-weight: bold;
+    font-size: var(--l);
+    margin-bottom: var(--x);
+    text-align: center;
+}
+
+.admin__chart-box {
+    overflow: auto;
+    max-width: 80vw;
+}
+
+.admin__chart-svg {
+    height: 253px;
+}
+
+.admin__view__table {
+    max-width: 80vw;
+    overflow: auto;
+}
+
+.admin__table {
+    border-collapse: collapse;
+    font-size: var(--s);
+    border-radius: 7px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+.admin__table td,
+.admin__table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.admin__table td:first-child {
+    text-align: center;
+}
+
+.admin__table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.admin__table tr:hover {
+    background-color: #ddd;
+}
+
+.admin__table th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #303030;
+    color: var(--container-color);
+    white-space: nowrap;
+}
+
+.admin__laporan .button {
+    margin: var(--m) 0;
+    width: max-content;
+}
+
+@media screen and (max-width: 800px) {
+    .admin__data {
+        grid-template-columns: 1fr 300px;
+    }
+}
+
+@media screen and (max-width: 688px) {
+    .admin__data {
+        grid-template-columns: 1fr;
+        grid-template-areas: 'barchart' 'piechart' 'table';
+    }
+}

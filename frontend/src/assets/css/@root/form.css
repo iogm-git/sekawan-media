@@ -1,0 +1,100 @@
+form {
+    width: 50vw;
+    background-color: var(--container-color);
+    padding: var(--x);
+    display: grid;
+    grid-auto-rows: max-content;
+    row-gap: var(--m);
+    border-radius: var(--m);
+    box-shadow: var(--shadow);
+    height: max-content;
+}
+
+form h2 {
+    text-align: center;
+}
+
+fieldset {
+    box-sizing: border-box;
+    border: 1px solid var(--text-color);
+    border-radius: 4px;
+    padding: 5px;
+}
+
+legend {
+    font-size: var(--xs);
+    padding: 0 5px;
+    opacity: .9;
+    margin-left: var(--xxs);
+}
+
+fieldset input,
+.select-form {
+    width: 100%;
+    font-size: var(--m);
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+
+fieldset input:focus {
+    border: var(--border);
+    border-color: var(--text-color);
+}
+
+fieldset .badge {
+    margin: 5px 10px;
+}
+
+form button {
+    margin-top: var(--m);
+}
+
+/* select */
+.select-ed,
+.select-value {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border: var(--border);
+    padding: 5px;
+    border-radius: 3px;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.select-ed:hover,
+.select-value:hover {
+    background-color: var(--bg-color);
+}
+
+.select-ed p,
+.select-value p {
+    border-radius: 2px;
+    border: var(--border);
+    background-color: var(--container-color);
+    padding: 2px 4px;
+    font-size: var(--s);
+}
+
+.select-ed p {
+    font-size: var(--m);
+}
+
+.select-ed svg {
+    transition: .3s;
+}
+
+.select-ed svg.active {
+    transform: rotate(90deg);
+}
+
+.select-option,
+.select-value {
+    margin-top: 5px;
+}
+
+/* select */

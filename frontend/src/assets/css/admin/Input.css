@@ -1,0 +1,23 @@
+/* section-form */
+.input__section {
+    display: flex;
+    justify-content: center;
+}
+
+.input__section form {
+    width: 100%;
+}
+
+.input__box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--m);
+}
+
+@media screen and (max-width: 750px) {
+    .input__box {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* section-form */
